@@ -7,7 +7,8 @@ To run on a UNIX terminal, type:
 `(directory)` is where the messages.htm file is located relative to the root directory. `(regexes)` may consist of multiple expressions separated by spaces. If there are more than one expressions, they will be individually evaulated.
 
 Update as of last commit:
-- Support for regex `|` operator has been added.
+- Cleaned up initial check condition, put `-c` flags on `grep` commands and omitted piping to `wc -l`.
+- Support for regex `|`, `<`, and `>` operators have been added. `?` has yet to be tested. All other operators may require precedence by `\`.
 - At the moment, the script will not check if the file matches the template of the HTML file. Therefore, a precondition is that the file must be named `messages.htm` and that the file is downloaded from Facebook.
 
 Additional Resources:
