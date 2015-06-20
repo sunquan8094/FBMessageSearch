@@ -4,7 +4,7 @@ This is a UNIX shell script that allows you to search through Facebook messages 
 To run on a UNIX terminal, type: 
 `fbmsgscript (directory) (regexes)`
 
-`(directory)` is where the messages.htm file is located relative to the root directory. `(regexes)` may consist of multiple expressions separated by spaces. 
+`(directory)` is where the messages.htm file is located relative to the root directory. `(regexes)` may consist of multiple expressions separated by spaces. If there are more than one expressions, they will be individually evaulated.
 
 Update as of last commit:
 - Support for regex `|` operator has been added.
